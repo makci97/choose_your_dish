@@ -1,12 +1,12 @@
 import os
 import numpy as np
 
-from flask import Flask, render_template
+from flask import render_template
 
+from app import app
 from app.dish_chooser import DishChooser
 
 
-app = Flask(__name__)
 dish_chooser = DishChooser()
 
 # list of cat images
